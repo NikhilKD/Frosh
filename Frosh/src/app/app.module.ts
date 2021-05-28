@@ -12,6 +12,7 @@ import {LoginModule} from './login/login.module';
 import {CartModule} from './cart/cart.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CitiesModule} from './cities/cities.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgbModule,
     FontAwesomeModule,
     CartModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

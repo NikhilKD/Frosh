@@ -1,0 +1,108 @@
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 10%;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 40%;
+    display:flex;
+    flex-direction:row;
+}
+.example-form button{
+    margin-left: 10%;
+    height:8%;
+    width:10%;
+    padding:1%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+/* Structure */
+table {
+    width: 60%;
+}
+.ujjain{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.indore{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.bhopal{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.rewa{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.vidisha{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.sagar{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.jabalpur{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.gwalior{
+    width:80%;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+.input{
+    width: 50%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.content h2{
+    color:black;
+    font-family: 'COUTUREBold';
+    font-size:1.8rem;
+    margin-bottom: 5%;
+}
+
+h2{
+    color:black;
+    font-family: 'COUTUREBold';
+    font-size:1.8rem;
+    margin-top: 3%;
+}

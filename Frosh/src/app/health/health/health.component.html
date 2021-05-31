@@ -1,0 +1,114 @@
+<div class="content">
+    <h2>Health Tips</h2>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Age</span>
+        <input #age type="text" class="form-control" placeholder="Enter Your Age" aria-label="Age" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+        <select #gender class="form-select" id="inputGroupSelect01">
+        <option selected>female</option>
+        <option value="1">male</option>
+        <option value="2">female</option>
+        </select>
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Weight</span>
+        <input #weight type="text" class="form-control" placeholder="Enter Your Weight" aria-label="Weight" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Height</span>
+        <input #height type="text" class="form-control" placeholder="Enter Your Height" aria-label="Height" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Activiy You Do</label>
+        <select #activity class="form-select" id="inputGroupSelect01">
+          <option selected>3</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="3">4</option>
+          <option value="3">5</option>
+          <option value="3">6</option>
+          <option value="3">7</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Goal</label>
+        <select #goal class="form-select" id="inputGroupSelect01">
+        <option selected>maintain</option>
+        <option value="1">maintain</option>
+        <option value="2">mildlose</option>
+        <option value="3">weightlose</option>
+        <option value="3">extremelose</option>
+        <option value="3">mildgain</option>
+        <option value="3">weightgain</option>
+        <option value="3">extremegain</option>
+        </select>
+      </div>
+    <button type="button" class="btn btn-primary btn-lg" (click)="userData(age,weight,height,activity,goal,gender)">Show</button>
+    </div>
+    <h4>For Balanced Body</h4>
+    <div class="value">
+    <ul>
+    <li><strong>Calorie:</strong></li>
+    <li><strong>Protein:</strong></li>
+    <li><strong>Fat:</strong></li>
+    <li><strong>Carbohydrate:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.calorie}}</li>
+        <li>{{bmi.balanced.protein}}</li>
+        <li>{{bmi.balanced.fat}}</li>
+        <li>{{bmi.balanced.carbs}}</li>
+    </ul>
+
+    </div>
+    <h4>For Low Fat Body</h4>
+    <div class="value">
+    <ul>
+    <li><strong>Calorie:</strong></li>
+    <li><strong>Protein:</strong></li>
+    <li><strong>Fat:</strong></li>
+    <li><strong>Carbohydrate:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.calorie}}</li>
+        <li>{{bmi.lowfat.protein}}</li>
+        <li>{{bmi.lowfat.fat}}</li>
+        <li>{{bmi.lowfat.carbs}}</li>
+    </ul>
+
+    </div>
+
+    <h4>For Low Carbohydrated Body</h4>
+    <div class="value">
+    <ul>
+    <li><strong>Calorie:</strong></li>
+    <li><strong>Protein:</strong></li>
+    <li><strong>Fat:</strong></li>
+    <li><strong>Carbohydrate:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.calorie}}</li>
+        <li>{{bmi.lowcarbs.protein}}</li>
+        <li>{{bmi.lowcarbs.fat}}</li>
+        <li>{{bmi.lowcarbs.carbs}}</li>
+    </ul>
+    </div>
+
+    <h4>For High Protein Body</h4>
+    <div class="value">
+    <ul>
+    <li><strong>Calorie:</strong></li>
+    <li><strong>Protein:</strong></li>
+    <li><strong>Fat:</strong></li>
+    <li><strong>Carbohydrate:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.calorie}}</li>
+        <li>{{bmi.highprotein.protein}}</li>
+        <li>{{bmi.highprotein.fat}}</li>
+        <li>{{bmi.highprotein.carbs}}</li>
+    </ul>
+    </div>

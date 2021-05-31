@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LoginRoutingModule } from './login-routing.module';
-import { LoginComponent } from './login/login.component';
+import { FoodRoutingModule } from './food-routing.module';
+import { FoodComponent } from './food/food.component';
 import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    LoginComponent
+    FoodComponent
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule,
-  ],
-  exports: [
-    LoginComponent,
+    FoodRoutingModule,
     HttpClientModule
   ]
 })
-export class LoginModule { }
+export class FoodModule { }

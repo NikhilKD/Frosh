@@ -1,0 +1,37 @@
+<div class="content">
+    <h2>Food Content</h2>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Food Item</span>
+        <input #item type="text" class="form-control" placeholder="Enter the Food Item" aria-label="Pincode" aria-describedby="addon-wrapping">
+    </div>
+      <button type="button" class="btn btn-primary btn-lg" (click)="foodData(item)">Show</button>
+    </div>
+    
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" style="padding-left: 3%;">S.NO</th>
+          <th scope="col">Food Item</th>
+          <th scope="col">water</th>
+          <th scope="col" >calories</th>
+          <th scope="col" >sugar</th>
+          <th scope="col" >protien</th>
+          <th scope="col" >carbohydrate</th>
+          <th scope="col" >calcium</th>
+          <th scope="col" >iron</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of data; let i=index">
+          <td style="padding-left: 5%" >{{i+1}}</td>
+          <td >{{transaction.shrt_desc}}</td>
+          <td >{{transaction.water}}</td>
+          <td style="padding-left: 2%;">{{transaction.energ_kcal}}</td>
+          <td style="width:5%">{{transaction.sugar_tot}}</td>
+          <td style="padding-left: 2%">{{transaction.protein}}</td>
+          <td style="padding-left: 4%">{{transaction.carbohydrt}}</td>
+          <td style="width:5%">{{transaction.calcium}}</td>
+          <td style="width:5%">{{transaction.iron}}</td>
+        </tr>
+      </tbody>
+    </table>

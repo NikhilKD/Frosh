@@ -9,10 +9,13 @@ import {HomeModule} from './home/home.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {ContactUsModule} from './contact-us/contact-us.module';
 import {LoginModule} from './login/login.module';
-import {CartModule} from './cart/cart.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CitiesModule} from './cities/cities.module';
+import {HttpClientModule} from '@angular/common/http';
+import {FoodModule} from './food/food.module';
+import {HealthModule} from './health/health.module';
+
 
 @NgModule({
   declarations: [
@@ -28,9 +31,11 @@ import {CitiesModule} from './cities/cities.module';
     LoginModule,
     NgbModule,
     FontAwesomeModule,
-    CartModule,
     BrowserAnimationsModule,
-    CitiesModule
+    CitiesModule,
+    HttpClientModule,
+    FoodModule,
+    HealthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

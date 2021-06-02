@@ -8,11 +8,13 @@ import {UserService } from '../../user.service';
 export class LoginComponent {
   pincode="";
   date="";
+  table=false;
   constructor(private user:UserService){
   }
   vaccine(pincode:any,date:any){
     this.pincode=pincode.value;
     this.date=date.value;
+    this.table=true;
     this.user.getData(this.pincode,this.date).subscribe((session: any) =>
     this.data = session
   )

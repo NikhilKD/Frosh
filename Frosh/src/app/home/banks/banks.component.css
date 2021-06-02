@@ -49,6 +49,9 @@
         width:86%;
         margin-right: 4%;
     }
+    #deals ul li h4{
+        font-size:0.8rem;
+    }
 }
 @media (min-width:320px) and (max-width:424.98px){
     #deals h2{
@@ -58,7 +61,14 @@
     }
     #deals ul li img{
         width: 100%;
-        margin-left: -62%;
+        margin-left: 0%;
+    }
+    #deals ul li h4{
+        font-size:0.6rem;
+    }
+    #deals ul {
+        position: relative;
+        left:-6%;
     }
 
 }

@@ -20,43 +20,68 @@ const ELEMENT_DATA1: PeriodicElement[] = [
 ];
 // indore data
 const ELEMENT_DATA2: PeriodicElement[] = [
-  {position: 1, name: 'Mahakaleshwar Temple', weight: 5, symbol: 'Temple'},
-  {position: 2, name: 'Harisidhi Temple ', weight: 4, symbol: 'Temple'},
-  {position: 3, name: 'Kothi Road', weight: 4, symbol: 'Street'},
-  {position: 4, name: 'Kal Bherauv', weight: 3, symbol: 'Temple'},
-  {position: 5, name: 'Iskcon Temple', weight: 5, symbol: 'Temple'},
+  {position: 1, name: 'Rajwada Palace', weight: 5, symbol: 'Palace'},
+  {position: 2, name: 'Central Museum', weight: 4, symbol: 'Museum'},
+  {position: 3, name: 'Annapurna Temple', weight: 4, symbol: 'Temple'},
+  {position: 4, name: 'Khajrana Ganesh Temple', weight: 3, symbol: 'Temple'},
+  {position: 5, name: 'Sarafa Bazaar', weight: 5, symbol: 'Food'},
+  {position: 6, name: 'Patalpani Waterfall', weight: 5, symbol: 'Water Fall'},
+  {position: 7, name: 'Ralamandal Wildlife Sanctuary', weight: 5, symbol: 'Wildlife Sanctuary'},
+  {position: 8, name: 'Choral Dam', weight: 5, symbol: 'Dam'},
+  {position: 9, name: 'Janapav Hill', weight: 5, symbol: 'Hill'},
+  {position: 10, name: 'Crescent Water Park', weight: 5, symbol: 'Water Park'},
+  {position: 11, name: 'Patalpani Waterfall', weight: 5, symbol: 'Water Fall'},
+  {position: 12, name: 'Patalpani Waterfall', weight: 5, symbol: 'Water Fall'},
 ];
 // bhopal data
 const ELEMENT_DATA3: PeriodicElement[] = [
-  {position: 1, name: 'Mahakaleshwar Temple', weight: 5, symbol: 'Temple'},
-  {position: 2, name: 'Harisidhi Temple ', weight: 4, symbol: 'Temple'},
-  {position: 3, name: 'Kothi Road', weight: 4, symbol: 'Street'},
-  {position: 4, name: 'Kal Bherauv', weight: 3, symbol: 'Temple'},
-  {position: 5, name: 'Iskcon Temple', weight: 5, symbol: 'Temple'},
+  {position: 1, name: 'Upper Lake', weight: 5, symbol: 'Lake'},
+  {position: 2, name: 'Taj UI Masajid', weight: 4, symbol: 'Mosque'},
+  {position: 3, name: 'Van Vihar National Park', weight: 4, symbol: 'National Park'},
+  {position: 4, name: 'Bhojeshwar Temple', weight: 3, symbol: 'Temple'},
+  {position: 5, name: 'Madhya Pradesh Tribal Museum', weight: 5, symbol: 'Museum'},
+  {position: 6, name: 'Sair Sapata Bhopal', weight: 5, symbol: 'Park'},
+  {position: 7, name: 'Kaliasot Dam', weight: 5, symbol: 'Dam'},
+  {position: 8, name: 'Manohar Dairy & Restaurant', weight: 5, symbol: 'Restaurent'},
+  {position: 9, name: 'Shahpura Hawkers', weight: 5, symbol: 'Hawkers'},
+  {position: 10, name: 'AIIMS Bhopal', weight: 5, symbol: 'Hospital'},
+  {position: 10, name: 'Fun city', weight: 5, symbol: 'Park'},
 ];
 // gwalior data
 const ELEMENT_DATA4: PeriodicElement[] = [
-  {position: 1, name: 'Mahakaleshwar Temple', weight: 5, symbol: 'Temple'},
-  {position: 2, name: 'Harisidhi Temple ', weight: 4, symbol: 'Temple'},
-  {position: 3, name: 'Kothi Road', weight: 4, symbol: 'Street'},
-  {position: 4, name: 'Kal Bherauv', weight: 3, symbol: 'Temple'},
-  {position: 5, name: 'Iskcon Temple', weight: 5, symbol: 'Temple'},
+  {position: 1, name: 'Gwalior Fort', weight: 5, symbol: 'Fort'},
+  {position: 2, name: 'Gwalior Zoo', weight: 4, symbol: 'Zoo'},
+  {position: 3, name: 'Gopachal Parvat', weight: 4, symbol: 'Hills'},
+  {position: 4, name: 'Tomb of Tansen', weight: 3, symbol: 'Mosque'},
+  {position: 6, name: 'Sun Temple Gwalior', weight: 5, symbol: 'Temple'},
+  {position: 7, name: 'Archaeological Museum', weight: 5, symbol: 'Museum'},
+  {position: 8, name: 'SPLASH THE SUN CITY', weight: 5, symbol: 'Park'},
+  {position: 9, name: 'Katora Taal', weight: 5, symbol: 'Street'},
+  {position: 10, name: 'BansiWala Restaurant', weight: 5, symbol: 'Restaurant'},
 ];
 // sagar data
 const ELEMENT_DATA5: PeriodicElement[] = [
-  {position: 1, name: 'Mahakaleshwar Temple', weight: 5, symbol: 'Temple'},
-  {position: 2, name: 'Harisidhi Temple ', weight: 4, symbol: 'Temple'},
-  {position: 3, name: 'Kothi Road', weight: 4, symbol: 'Street'},
-  {position: 4, name: 'Kal Bherauv', weight: 3, symbol: 'Temple'},
-  {position: 5, name: 'Iskcon Temple', weight: 5, symbol: 'Temple'},
+  {position: 1, name: 'Lakha Banjara', weight: 5, symbol: 'Lake'},
+  {position: 2, name: 'University Botanical', weight: 4, symbol: 'Park'},
+  {position: 3, name: 'Gadpehra', weight: 4, symbol: 'Temple'},
+  {position: 4, name: 'Eran', weight: 3, symbol: 'Temple'},
+  {position: 5, name: 'Naoradehi', weight: 5, symbol: 'Wildlife Sanctuary'},
+  {position: 6, name: 'Khimlasa', weight: 5, symbol: 'Wildlife Sanctuary'},
+  {position: 7, name: 'Rahatgarh', weight: 5, symbol: 'Water Fall'},
+  {position: 8, name: 'TDC The Dine Culture', weight: 5, symbol: 'Restaurant'},
 ];
 // vidisha data
 const ELEMENT_DATA6: PeriodicElement[] = [
-  {position: 1, name: 'Mahakaleshwar Temple', weight: 5, symbol: 'Temple'},
-  {position: 2, name: 'Harisidhi Temple ', weight: 4, symbol: 'Temple'},
-  {position: 3, name: 'Kothi Road', weight: 4, symbol: 'Street'},
-  {position: 4, name: 'Kal Bherauv', weight: 3, symbol: 'Temple'},
-  {position: 5, name: 'Iskcon Temple', weight: 5, symbol: 'Temple'},
+  {position: 1, name: 'Gateway Retreat', weight: 5, symbol: 'Restaurant'},
+  {position: 2, name: 'Jehan Numa ', weight: 4, symbol: 'Palace'},
+  {position: 3, name: 'Bijamandal', weight: 4, symbol: 'Temple'},
+  {position: 4, name: 'Khamba Baba', weight: 3, symbol: 'Temple'},
+  {position: 5, name: 'The Udyagiri', weight: 5, symbol: 'Cave'},
+  {position: 6, name: 'Sola Kambhi', weight: 5, symbol: 'Temple'},
+  {position: 7, name: 'Avyukt', weight: 5, symbol: 'Restaurant'},
+  {position: 8, name: 'Kalidas Dam', weight: 5, symbol: 'Dam'},
+  {position: 8, name: 'Jholiapur', weight: 5, symbol: 'Dam'},
+
 ];
 // jabalpur data
 const ELEMENT_DATA7: PeriodicElement[] = [

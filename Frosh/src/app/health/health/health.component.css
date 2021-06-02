@@ -45,3 +45,14 @@ h4{
     align-items:center;
     margin-top:5%;
 }
+@media (min-width: 320px) and (max-width: 599.98px) {
+    .main{
+        margin-top:25%;
+    }
+    .input-group{ 
+        width:100%; ;
+    }
+    h4{ 
+        font-size:1.1rem;
+    }
+}

@@ -29,6 +29,7 @@
 #deals ul li h4{
     font-family: 'COUTUREBold';
     color:white;
+    margin-top: 2%;
 }
 
 #deals ul li img{
@@ -54,8 +55,18 @@
         width:86%;
         padding-right: 0%;
         position: relative;
-        left: -27%;
+        left: 0%;
     }
+    #deals ul li h4{
+        font-size:0.8rem;
+    }
+    #deals ul {
+        display:flex;
+        flex-direction:row;
+        position: relative;
+        left: -7%;
+    }
+    
 
 }
 @media (min-width:320px) and (max-width:424.98px){
@@ -70,7 +81,16 @@
         width: 86%;
         padding-right: 0%;
         position: relative;
-        left: -27%;
+    }
+
+    #deals ul li h4{
+        font-size:0.8rem;
+    }
+    #deals ul {
+        display:flex;
+        flex-direction:row;
+        position: relative;
+        left: -7%;
     }
 
 }

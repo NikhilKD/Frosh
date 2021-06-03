@@ -1,6 +1,6 @@
 <section>
     <nav>
-        <a href="#" class="logo">FROSH </a>
+        <a href="#" class="logo"><img src="../../../../../../../assets/Frosh logo.png"> </a>
         <ul class="navigation" data-aos="slide-left">
             <li><a routerLink="home">Home</a></li>
             <li><a href="">Leisure</a></li>
@@ -10,6 +10,23 @@
         </ul>
         <div id="login"><a routerLink="vaccine">Vaccine</a></div>
     </nav>
+    <div class="nav">
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><img src="../../../../../../../assets/Frosh logo.png"></div>
+        <ul class="links">
+            <li><a routerLink="home">Home</a></li>
+            <li><a href="">Leisure</a></li>
+            <li><a href="health">Health</a></li>
+            <li><a href="food">Food</a></li>
+            <li><a routerLink="contact">Contact us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </div>
+    
 </section>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

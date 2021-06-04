@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "frosh-hackathon"
+    "default": "frosh-hackathon",
+    "staging": "frosh-c4694"
   }
 }

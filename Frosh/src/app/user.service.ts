@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Subject } from 'rxjs';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient,public fireservices: AngularFirestore) {}
     
     getData(pincode:any,date:any):any {
       let url="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode="+pincode+"&date="+date;
@@ -33,6 +34,10 @@ export class UserService {
           "x-rapidapi-key": "783fe5928fmshbf57c16e93ed3afp19c9fcjsn110db576b6d4"
         }
       });
+    }
+
+    create_Newemployee(Record:any){
+      return this.fireservices.collection('Employee').add(Record);
     }
 
 }

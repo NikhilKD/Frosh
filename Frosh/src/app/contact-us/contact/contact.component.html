@@ -1,5 +1,5 @@
 <div id="heading"data-aos="fade-up" >
-<h1>Contact US</h1>
+<h1>CONTACT US</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat repellat enim .</p>
 </div>
 <div id="main">
@@ -23,19 +23,19 @@
         <form>
             <h2>Send Message</h2>
             <div class="inputBox">
-                <input type="text" name="" required="required">
+                <input #name type="text" required="required">
                 <span>Full Name</span>
             </div>
             <div class="inputBox">
-                <input type="text" name="" required="required">
+                <input #email type="text"  required="required">
                 <span>Email</span>
             </div>
             <div class="inputBox">
-                <textarea required="required"></textarea>
+                <textarea #message required="required" ></textarea>
                 <span>Type your Message.....</span>
             </div>
             <div class="inputBox">
-                <input type="submit" name=""value="Send">
+                <input mat-button (click)="openDialog()" type="submit" (click)="CreateRecord(name,email,message)" value="Send">
             </div>
         </form>
     </div>

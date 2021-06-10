@@ -80,9 +80,41 @@ section {
 
   
 /* Mobile Navbar */
+
+#borderXwidth li a:before, div.borderXwidth li a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+#borderXwidth li a:before
+{
+    left: 0px;
+    top: 36px;
+}
+
+#borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+#borderXwidth li a:hover:before, #borderXwidth li a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+
 .nav .logo img{
-  height: 13vh;
+  height: 10vh;
   margin-left: 2%;
+  margin-top: 2%;
 }
 .nav {
 	position: fixed;
@@ -119,11 +151,15 @@ section {
 }
 .nav .links a {
 	display: block;
-	padding: 1em;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 #nav-toggle {
 	position: absolute;
@@ -162,7 +198,7 @@ section {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: rgba(0,0,0);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;

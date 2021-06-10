@@ -16,6 +16,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FoodModule} from './food/food.module';
 import {HealthModule} from './health/health.module';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {environment} from '../environments/environment';
+
+
+
 
 @NgModule({
   declarations: [
@@ -35,7 +43,11 @@ import {HealthModule} from './health/health.module';
     CitiesModule,
     HttpClientModule,
     FoodModule,
-    HealthModule
+    HealthModule,
+    AngularFireModule.initializeApp(environment.config),
+    AngularFirestoreModule, 
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

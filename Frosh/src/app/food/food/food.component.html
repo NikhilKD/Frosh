@@ -6,6 +6,12 @@
     </div>
       <button type="button" class="btn btn-primary btn-lg" (click)="foodData(item)">Show</button>
     </div>
+    <div class="fetch" *ngIf=fetch >
+      <div class="spinner-border text-primary" role="status" style="margin-right: 2%;">
+          <span class="visually-hidden"></span>
+        </div>
+       Fetching Data.....
+    </div>
     
     <table class="table">
       <thead class="thead-dark">

@@ -49,6 +49,12 @@
       </div>
     <button type="button" class="btn btn-primary btn-lg" (click)="userData(age,weight,height,activity,goal,gender)">Show</button>
     </div>
+    <div class="fetch" *ngIf=fetch >
+        <div class="spinner-border text-primary" role="status" style="margin-right: 2%;">
+            <span class="visually-hidden"></span>
+          </div>
+         Fetching Data.....
+    </div>
     <h4>For Balanced Body</h4>
     <div class="value">
     <ul>

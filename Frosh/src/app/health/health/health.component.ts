@@ -11,6 +11,7 @@ export class HealthComponent {
   constructor(private user:UserService) {
 
   }
+  fetch=false;
   age="";
   weight="";
   height="";
@@ -18,14 +19,17 @@ export class HealthComponent {
   goal="";
   gender="";
   userData(age:any,weight:any,height:any,activity:any,goal:any,gender:any){
+    this.fetch=true
     this.age=age.value;
     this.weight=weight.value;
     this.height=height.value;
     this.activity=activity.value;
     this.goal=goal.value;
     this.gender=gender.value;
-    this.user.getHealth(this.age,this.weight,this.height,this.activity,this.goal,this.gender).subscribe((data:any) =>
-    this.bmi=data
+    this.user.getHealth(this.age,this.weight,this.height,this.activity,this.goal,this.gender).subscribe((data:any) =>{
+    this.bmi=data;
+    this.fetch=false;
+    }
     )
   }
 

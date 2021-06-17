@@ -1,0 +1,66 @@
+<div class="content">
+    <button type="button" class="btn btn-dark" (click)="wantHelp();">Need Help</button>
+    <br>
+    <br>
+    <br>
+    <form [style.display]="help?'flex':'none'">
+        <p>
+            <mat-form-field  appearance="legacy">
+              <mat-label>Enter Your Problem</mat-label>
+              <input #problem matInput placeholder="Write your problem">
+              <mat-hint>Ex:Need Blood</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Describe</mat-label>
+              <input #description matInput placeholder="Describe your problem">
+              <mat-hint>Ex:O negative blood needed</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Time</mat-label>
+              <input #time matInput placeholder="In how much time">
+              <mat-hint>Ex:24 Hrs</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Adresss</mat-label>
+              <input #address matInput placeholder="Your address">
+              <mat-hint>Ex:50 Rishi East City Bhopal</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="legacy">
+              <mat-label>Phone</mat-label>
+              <input #phone matInput placeholder="Your Phone Number">
+              <mat-hint>Ex:8770610878</mat-hint>
+            </mat-form-field>
+          </p>
+          <button type="button" (click)="submit(problem,description,time,address,phone)" class="btn btn-success">Submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-bottom:5%">EMERGENCY</h2>
+    <mat-accordion *ngFor="let item of data" style="margin-top:5%">
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{item.id}}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{item.description}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Needed In : {{item.time}}
+          <br>
+          Address : {{item.address}}
+          <br>
+          Phone No : {{item.phone}}
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+</div>

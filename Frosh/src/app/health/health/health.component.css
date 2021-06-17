@@ -45,6 +45,12 @@ h4{
     align-items:center;
     margin-top:5%;
 }
+.fetch{
+    display:flex;
+    margin: 5%;
+    justify-content:center;
+    align-items:center;
+}
 @media (min-width: 320px) and (max-width: 599.98px) {
     .main{
         margin-top:25%;

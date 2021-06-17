@@ -10,10 +10,13 @@ export class FoodComponent{
   data:any;
   constructor(private user:UserService) {}
   food="";
+  fetch=false
   foodData(item:any){
+    this.fetch=true
     this.food=item.value;
     this.user.getFoodData(this.food).subscribe((session:any) =>
-    this.data=session
+   { this.data=session;
+    this.fetch=false}
   )
   }
 

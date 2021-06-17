@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Subject } from 'rxjs';
 import {AngularFirestore} from '@angular/fire/firestore';
 
@@ -38,6 +38,15 @@ export class UserService {
 
     create_Newemployee(Record:any){
       return this.fireservices.collection('Employee').add(Record);
+    }
+    url4='https://frosh-c7f60-default-rtdb.firebaseio.com/product.json';
+    private headers=new HttpHeaders({'Content-Type':'application/json'});
+    saveProduct(data:any[]){
+      return this.http.put(this.url4,data,{headers:this.headers});
+    }
+
+    fetchProducts(){
+      return this.http.get(this.url4);
     }
 
 }

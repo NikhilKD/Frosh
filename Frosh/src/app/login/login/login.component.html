@@ -13,6 +13,12 @@
   <h2>{{data.name}}</h2>
   <button type="button" class="btn btn-primary btn-lg" (click)="vaccine(pincode,date)">Show</button>
 </div>
+<div class="fetch" *ngIf=fetch >
+  <div class="spinner-border text-primary" role="status" style="margin-right: 2%;">
+      <span class="visually-hidden"></span>
+    </div>
+   Fetching Data.....
+</div>
 
 <div class="main" [style.display]="table?'flex':'none'">  
 
@@ -42,4 +48,5 @@
     </tr>
   </tbody>
 </table>
+
 </div>

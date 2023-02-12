@@ -26,8 +26,9 @@ export class HealthComponent {
     this.activity=activity.value;
     this.goal=goal.value;
     this.gender=gender.value;
-    this.user.getHealth(this.age,this.weight,this.height,this.activity,this.goal,this.gender).subscribe((data:any) =>{
+    this.user.getHealth(this.age,this.weight,this.height,this.activity,this.gender).subscribe((data:any) =>{
     this.bmi=data;
+    console.log(data);
     this.fetch=false;
     }
     )

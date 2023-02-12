@@ -15,11 +15,11 @@ export class FoodComponent{
     this.fetch=true
     this.food=item.value;
     this.user.getFoodData(this.food).subscribe((session:any) =>
-   { this.data=session;
-    this.fetch=false}
+  { 
+    this.data=session,
+    console.log(session),
+    this.fetch=false
+  }
   )
   }
-
-
-
 }

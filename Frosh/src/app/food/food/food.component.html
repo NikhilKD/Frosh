@@ -12,32 +12,12 @@
         </div>
        Fetching Data.....
     </div>
+    <div *ngFor="let x of data; let i=index">
+      <div class="container-fluid" id="food">
+        <div class="tile"><span>Food Name: </span>{{x.title}}</div>
+        <div class="tile"><span>Ingridients: </span>{{x.ingredients}}</div>
+        <div class="tile"><span>Servings: </span>{{x.servings}}</div>
+        <div class="tile"><span>Instruction: </span>{{x.instructions}}</div>
+      </div>
+    </div>
     
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col" style="padding-left: 3%;">S.NO</th>
-          <th scope="col">Food Item</th>
-          <th scope="col">water</th>
-          <th scope="col" >calories</th>
-          <th scope="col" >sugar</th>
-          <th scope="col" >protien</th>
-          <th scope="col" >carbohydrate</th>
-          <th scope="col" >calcium</th>
-          <th scope="col" >iron</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let transaction of data; let i=index">
-          <td style="padding-left: 5%" >{{i+1}}</td>
-          <td >{{transaction.shrt_desc}}</td>
-          <td >{{transaction.water}}</td>
-          <td style="padding-left: 2%;">{{transaction.energ_kcal}}</td>
-          <td style="width:5%">{{transaction.sugar_tot}}</td>
-          <td style="padding-left: 2%">{{transaction.protein}}</td>
-          <td style="padding-left: 4%">{{transaction.carbohydrt}}</td>
-          <td style="width:5%">{{transaction.calcium}}</td>
-          <td style="width:5%">{{transaction.iron}}</td>
-        </tr>
-      </tbody>
-    </table>

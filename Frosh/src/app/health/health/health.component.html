@@ -9,8 +9,8 @@
         <label class="input-group-text" for="inputGroupSelect01">Gender</label>
         <select #gender class="form-select" id="inputGroupSelect01">
         <option selected>female</option>
-        <option value="1">male</option>
-        <option value="2">female</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
         </select>
     </div>
     <div class="input-group flex-nowrap">
@@ -24,27 +24,13 @@
     <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">Activiy You Do</label>
         <select #activity class="form-select" id="inputGroupSelect01">
-          <option selected>3</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="3">4</option>
-          <option value="3">5</option>
-          <option value="3">6</option>
-          <option value="3">7</option>
-        </select>
-      </div>
-      <div class="input-group mb-3">
-        <label class="input-group-text" for="inputGroupSelect01">Goal</label>
-        <select #goal class="form-select" id="inputGroupSelect01">
-        <option selected>maintain</option>
-        <option value="1">maintain</option>
-        <option value="2">mildlose</option>
-        <option value="3">weightlose</option>
-        <option value="3">extremelose</option>
-        <option value="3">mildgain</option>
-        <option value="3">weightgain</option>
-        <option value="3">extremegain</option>
+          <option selected>level_3</option>
+          <option value="level_1">level_1</option>
+          <option value="level_2">level_2</option>
+          <option value="level_3">level_3</option>
+          <option value="level_4">level_4</option>
+          <option value="level_5">level_5</option>
+          <option value="level_6">level_6</option>
         </select>
       </div>
     <button type="button" class="btn btn-primary btn-lg" (click)="userData(age,weight,height,activity,goal,gender)">Show</button>
@@ -55,68 +41,87 @@
           </div>
          Fetching Data.....
     </div>
-    <h4>For Balanced Body</h4>
+    <h4>For Maintaing Body</h4>
     <div class="value">
     <ul>
-    <li><strong>Calorie:</strong></li>
-    <li><strong>Protein:</strong></li>
-    <li><strong>Fat:</strong></li>
-    <li><strong>Carbohydrate:</strong></li>
+    <li><strong>Calory:</strong></li>
     </ul>
     <ul>
-        <li>{{bmi.calorie}}</li>
-        <li>{{bmi.balanced.protein}}</li>
-        <li>{{bmi.balanced.fat}}</li>
-        <li>{{bmi.balanced.carbs}}</li>
+        <li>{{bmi.data.goals["maintain weight"]}}</li>
     </ul>
 
     </div>
-    <h4>For Low Fat Body</h4>
+    <h4>Mild weight loss</h4>
     <div class="value">
     <ul>
-    <li><strong>Calorie:</strong></li>
-    <li><strong>Protein:</strong></li>
-    <li><strong>Fat:</strong></li>
-    <li><strong>Carbohydrate:</strong></li>
+    <li><strong>Loss weight :</strong></li>
+    <li><strong>calory:</strong></li>
     </ul>
     <ul>
-        <li>{{bmi.calorie}}</li>
-        <li>{{bmi.lowfat.protein}}</li>
-        <li>{{bmi.lowfat.fat}}</li>
-        <li>{{bmi.lowfat.carbs}}</li>
+        <li>{{bmi.data.goals["Mild weight loss"]["loss weight"]}}</li>
+        <li>{{bmi.data.goals["Mild weight loss"]["calory"]}}</li>
     </ul>
 
     </div>
 
-    <h4>For Low Carbohydrated Body</h4>
+    <h4>Weight loss</h4>
     <div class="value">
     <ul>
-    <li><strong>Calorie:</strong></li>
-    <li><strong>Protein:</strong></li>
-    <li><strong>Fat:</strong></li>
-    <li><strong>Carbohydrate:</strong></li>
+        <li><strong>Loss weight :</strong></li>
+        <li><strong>calory:</strong></li>
     </ul>
     <ul>
-        <li>{{bmi.calorie}}</li>
-        <li>{{bmi.lowcarbs.protein}}</li>
-        <li>{{bmi.lowcarbs.fat}}</li>
-        <li>{{bmi.lowcarbs.carbs}}</li>
+        <li>{{bmi.data.goals["Weight loss"]["loss weight"]}}</li>
+        <li>{{bmi.data.goals["Weight loss"]["calory"]}}</li>
     </ul>
     </div>
 
-    <h4>For High Protein Body</h4>
+    <h4>Extreme weight loss</h4>
     <div class="value">
     <ul>
-    <li><strong>Calorie:</strong></li>
-    <li><strong>Protein:</strong></li>
-    <li><strong>Fat:</strong></li>
-    <li><strong>Carbohydrate:</strong></li>
+        <li><strong>Loss weight :</strong></li>
+        <li><strong>calory:</strong></li>
     </ul>
     <ul>
-        <li>{{bmi.calorie}}</li>
-        <li>{{bmi.highprotein.protein}}</li>
-        <li>{{bmi.highprotein.fat}}</li>
-        <li>{{bmi.highprotein.carbs}}</li>
+        <li>{{bmi.data.goals["Extreme weight loss"]["loss weight"]}}</li>
+        <li>{{bmi.data.goals["Extreme weight loss"]["calory"]}}</li>
     </ul>
     </div>
+
+    <h4>Mild weight gain</h4>
+    <div class="value">
+    <ul>
+        <li><strong>gain weight :</strong></li>
+        <li><strong>calory:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.data.goals["Mild weight gain"]["gain weight"]}}</li>
+        <li>{{bmi.data.goals["Mild weight gain"]["calory"]}}</li>
+    </ul>
+    </div>
+
+    <h4>Weight gain</h4>
+    <div class="value">
+    <ul>
+        <li><strong>Loss weight :</strong></li>
+        <li><strong>calory:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.data.goals["Weight gain"]["gain weight"]}}</li>
+        <li>{{bmi.data.goals["Weight gain"]["calory"]}}</li>
+    </ul>
+    </div>
+
+    <h4>Extreme weight gain</h4>
+    <div class="value">
+    <ul>
+        <li><strong>Loss weight :</strong></li>
+        <li><strong>calory:</strong></li>
+    </ul>
+    <ul>
+        <li>{{bmi.data.goals["Extreme weight gain"]["gain weight"]}}</li>
+        <li>{{bmi.data.goals["Extreme weight gain"]["calory"]}}</li>
+    </ul>
+    </div>
+
 </div>

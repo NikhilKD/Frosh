@@ -17,21 +17,40 @@ export class UserService {
     
     
     getFoodData(item:any) {
-      let url2="https://food-calorie-data-search.p.rapidapi.com/api/search?keyword="+item;
+      let url2="https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe";
+      let params={
+        query:item
+      }
       return this.http.get(url2, {
+        params,
         headers: {
-          "x-rapidapi-host": "food-calorie-data-search.p.rapidapi.com",
-          "x-rapidapi-key": "783fe5928fmshbf57c16e93ed3afp19c9fcjsn110db576b6d4"
+          "x-rapidapi-key": "783fe5928fmshbf57c16e93ed3afp19c9fcjsn110db576b6d4",
+          "x-rapidapi-host": "recipe-by-api-ninjas.p.rapidapi.com"
         }
       });
     }
 
-    getHealth(age:any,weight:any,height:any,activity:any,goal:any,gender:any) {
-      let url3="https://fitness-calculator.p.rapidapi.com/macrocalculator?age="+age+"&gender="+gender+"&height="+height+"&weight="+weight+"&activitylevel="+activity+"&goal="+goal;
+    getHealth(age:any,weight:any,height:any,activity:any,gender:any) {
+      let url3="https://fitness-calculator.p.rapidapi.com/dailycalorie";
+      let params={
+        age: age,
+        gender: gender,
+        height: height,
+        weight: weight,
+        activitylevel: activity
+      }
+      // let params={
+      //   age: '20',
+      //   gender: 'female',
+      //   height: '162',
+      //   weight: '58',
+      //   activitylevel: 'level_1'
+      // }
       return this.http.get(url3, {
+        params,
         headers: {
-          "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
-          "x-rapidapi-key": "783fe5928fmshbf57c16e93ed3afp19c9fcjsn110db576b6d4"
+          'X-RapidAPI-Key': '783fe5928fmshbf57c16e93ed3afp19c9fcjsn110db576b6d4',
+          'X-RapidAPI-Host': 'fitness-calculator.p.rapidapi.com'
         }
       });
     }
